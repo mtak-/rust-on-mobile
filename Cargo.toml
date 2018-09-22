@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "rust/example01/app-bin",
+    "rust/example01/app-bindings",
+    "rust/example01/app-lib",
+]

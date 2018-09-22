@@ -1,0 +1,13 @@
+[package]
+name = "app-bindings01"
+version = "0.1.0"
+authors = ["mtak-"]
+edition = "2018"
+
+[dependencies]
+
+[dependencies.app-lib01]
+path = "../app-lib"
+
+[lib]
+crate-type = ["staticlib"]

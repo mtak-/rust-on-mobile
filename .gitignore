@@ -1,0 +1,5 @@
+Cargo.lock
+target
+ios/rust-on-ios.xcodeproj/project.xcworkspace/xcuserdata
+ios/rust-on-ios.xcodeproj/xcuserdata
+**/bindings.h

@@ -1,0 +1,5 @@
+format_strings = true
+comment_width = 80
+max_width = 80
+merge_imports=true
+wrap_comments = true
