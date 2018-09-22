@@ -36,6 +36,7 @@
 		2F50CFEF2156BBE800291C33 /* bindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bindings.h; sourceTree = "<group>"; };
 		2F50CFF32156C2E200291C33 /* libapp_bindings01.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libapp_bindings01.a; path = "../target/x86_64-apple-ios/debug/libapp_bindings01.a"; sourceTree = "<group>"; };
 		2F50CFF72156C35800291C33 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2F50CFFA2156C98E00291C33 /* rust */ = {isa = PBXFileReference; lastKnownFileType = folder; name = rust; path = ../rust; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		2F50CFA92155FB1600291C33 = {
 			isa = PBXGroup;
 			children = (
+				2F50CFFA2156C98E00291C33 /* rust */,
 				2F50CFD02156A3D000291C33 /* example01 */,
 				2F50CFB32155FB1600291C33 /* Products */,
 				2F50CFF22156C2E200291C33 /* Frameworks */,
