@@ -7,7 +7,7 @@ use std::{
 #[no_mangle]
 pub extern "C" fn main_rs() -> std::os::raw::c_int {
     // See `safe_unwind` below.
-    safe_unwind(app_lib01::main_rs)
+    stop_unwind(app_lib01::main_rs)
 }
 
 /// Panicking out of rust into another language is Undefined Behavior!
@@ -15,7 +15,7 @@ pub extern "C" fn main_rs() -> std::os::raw::c_int {
 /// Catching a panic at the FFI boundary is one of the few generally agreed
 /// upon use cases for `catch_unwind`.
 /// https://doc.rust-lang.org/nomicon/unwinding.html
-fn safe_unwind<F: FnOnce() -> T + UnwindSafe, T>(f: F) -> T {
+fn stop_unwind<F: FnOnce() -> T + UnwindSafe, T>(f: F) -> T {
     match panic::catch_unwind(f) {
         Ok(t) => t,
         Err(_) => {
