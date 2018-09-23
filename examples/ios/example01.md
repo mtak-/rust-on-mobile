@@ -189,11 +189,13 @@ Hello iOS!
 ## Setting up the Xcode Project
 
 Create a new `Single View App` Xcode project in the `ios` folder.
+
 ![Single View App](./data/new_project.png)
 
 Be sure to set the language to `Objective C`.
 
 Turn on the "Legacy Build System" (Xcode10 only). It is a bit more reliable (File -> Project Settings -> Legacy Build System):
+
 ![Legacy Build System](./data/legacy_build_system.png)
 
 Now delete all the default files from your project except for `main.m` and `Info.plist`. Rename `main.m` to `main.mm` to use `ObjectiveC++`.
@@ -324,6 +326,7 @@ Back in the xcode project lets add all these directories to our `Library Search 
 ![Library Search Paths](./data/library_search_paths.png)
 
 Lastly add `app_bindings.a` - any one in the target folder will do - to the "Link Binary With Libraries" section in "Build Phases"
+
 ![Link with library](./data/link_binary_with_libraries.png)
 
 For some reason I also needed to add `Security.framework` to fix a linker error, YMMV.
