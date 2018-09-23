@@ -193,6 +193,9 @@ Create a new `Single View App` Xcode project in the `ios` folder.
 
 Be sure to set the language to `Objective C`.
 
+Turn on the "Legacy Build System" (Xcode10 only). It is a bit more reliable (File -> Project Settings -> Legacy Build System):
+![Legacy Build System](./data/legacy_build_system.png)
+
 Now delete all the default files from your project except for `main.m` and `Info.plist`. Rename `main.m` to `main.mm` to use `ObjectiveC++`.
 
 ![Project Structure](./data/project_structure.png)
