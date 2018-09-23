@@ -312,11 +312,11 @@ To be sure we link to the correct architecture, we'll create some symlinks in th
 ```sh
 $ mkdir target-symlinks
 $ cd target-symlinks
-$ ln -s target/aarch64-apple-ios arm64
-$ ln -s target/armv7s-apple-ios armv7s
-$ ln -s target/armv7-apple-ios armv7
-$ ln -s target/x86_64-apple-ios x86_64
-$ ln -s target/i386-apple-ios i386
+$ ln -s ../target/aarch64-apple-ios arm64
+$ ln -s ../target/armv7s-apple-ios armv7s
+$ ln -s ../target/armv7-apple-ios armv7
+$ ln -s ../target/x86_64-apple-ios x86_64
+$ ln -s ../target/i386-apple-ios i386
 ```
 
 Back in the xcode project lets add all these directories to our `Library Search Paths` for our application:
