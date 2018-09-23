@@ -319,7 +319,7 @@ $ ln -s ../target/x86_64-apple-ios x86_64
 $ ln -s ../target/i386-apple-ios i386
 ```
 
-Back in the xcode project lets add all these directories to our `Library Search Paths` for our application:
+Back in the xcode project lets add all these directories to our `Library Search Paths` for our application with one cute line (does not work for release builds..):
 
 ![Library Search Paths](./data/library_search_paths.png)
 
