@@ -159,13 +159,13 @@ Inside `main_rs` we want to call `app_lib::main_rs()`, but we don't want to unwi
 ). It's weird, _very weird_, that this is UB given that there's neither hide nor hair of `unsafe`, but... meh? The helper function `stop_unwind` is used to catch any panic, and convert that into a hard `process::abort()`.
 
 ### app-bin
-This project is just to enable `cargo run -p app-bin` to work from the command line. It's a convenience so that we don't have to keep switching between IDEs (vscode/xcode). It will not (easily) work on iOS; moreover, it's much quicker to iterate on the the OSX than on iOS.
+This project is just to enable `cargo run -p app-bin` to work from the command line. It's a convenience so that we don't have to keep switching between IDEs (vscode/xcode). It will not (easily) work on iOS; moreover, it's much quicker to iterate on OSX than on iOS.
 
 ```sh
 $ cargo new --bin app-bin
 ```
 
-Add app-lib as a dependency.
+Add it to the workspace and then add app-lib as a dependency.
 ```toml
 [dependencies.app-lib]
 path = "../app-lib"
