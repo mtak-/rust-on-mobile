@@ -98,7 +98,7 @@ Add that project to the workspace by modifying the root `Cargo.toml`
 ```toml
 [workspace]
 members = [
-    "rust/app-bin"
+    "rust/app-lib"
 ]
 ```
 
