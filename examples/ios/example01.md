@@ -260,7 +260,7 @@ int main(int argc, char * argv[]) {
 }
 ```
 
-Now that the ObjectiveC++ to rust FF is all setup the only thing left to do is to tell xcode how to build our rust code, and then link to it!
+Now that the ObjectiveC++ to rust FFI is all setup the only thing left to do is to tell xcode how to build our rust code, and then link to it!
 
 ### cargo target
 
